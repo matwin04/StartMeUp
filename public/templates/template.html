@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Start Me Up</title>
+        <link href="/styles/clock.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="clock"></div>
+        <div id="calendar"></div>
+
+        <h1>Welcome {{ welcomeMessage }}</h1>
+
+        <div id="dock">
+            {{#each links}}
+            <a href="{{url}}" target="_blank" class="dock-item">
+                <img src="{{icon}}" />
+            </a>
+            {{/each}}
+        </div>
+
+        <script src="/js/clock.js"></script>
+    </body>
+</html>

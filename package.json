@@ -1,0 +1,26 @@
+{
+  "name": "startmeup",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matwin04/StartMeUp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matwin04/StartMeUp/issues"
+  },
+  "homepage": "https://github.com/matwin04/StartMeUp#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "nunjucks": "^3.2.4"
+  },
+  "description": ""
+}

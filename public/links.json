@@ -1,0 +1,15 @@
+{
+    "welcomeMessage": "OSAKA SAN",
+    "links": [
+        {
+            "text": "Google",
+            "url": "https://google.com",
+            "icon": "https://logo.clearbit.com/google.com"
+        },
+        {
+            "text": "GitHub",
+            "url": "https://github.com",
+            "icon": "https://icons.duckduckgo.com/ip3/github.com.ico"
+        }
+    ]
+}
