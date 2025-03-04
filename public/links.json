@@ -4,12 +4,17 @@
         {
             "text": "Google",
             "url": "https://google.com",
-            "icon": "https://logo.clearbit.com/google.com"
+            "icon": "https://img.icons8.com/color/48/google-logo.png"
         },
         {
             "text": "GitHub",
             "url": "https://github.com",
-            "icon": "https://icons.duckduckgo.com/ip3/github.com.ico"
+            "icon": "https://img.icons8.com/ios-filled/50/github.png"
+        },
+        {
+            "text": "YouTube",
+            "url": "https://youtube.com",
+            "icon": "https://fonts.gstatic.com/s/i/materialicons/youtube/v5/24px.svg"
         }
     ]
 }

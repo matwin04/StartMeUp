@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "FreeSans";
-    src: url("https://fonts.cdnfonts.com/s/13381/FreeSans.woff") format("woff");
+    font-family: 'FreeSans';
+    src: url('https://fonts.cdnfonts.com/s/13381/FreeSans.woff') format('woff');
 }
 
 body {
-    font-family: "FreeSans", sans-serif;
+    font-family: 'FreeSans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,37 +14,53 @@ body {
     text-align: center;
 }
 
-body {
-    font-family: "FreeSans", sans-serif;
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+}
+
+#top-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#clock-section, #weather-section {
+    flex: 1;
+    padding: 20px;
+    background: #4A90E2;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+#links-section {
     display: flex;
     justify-content: center;
-    height: 100vh;
-    background: #222;
-    color: white;
-    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    background: #4A90E2;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.app-icon {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
 }
 
-#clock {
-    font-size: 4em;
-    background-color: aliceblue;
-    color: black;
-    padding: 10px;
-    border-radius: 8px;
+.app-icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-.dock-item img {
-    width: 48px;
-    height: 48px;
-    padding: 10px 10px;
-    background-color: wheat;
-    border-radius: 4px;
-    transition:
-        transform 0.3s ease,
-        filter 0.3s ease;
-}
-.dock-item:hover img {
-    transform: scale(1.5);
+
+.app-icon:hover img {
+    transform: scale(1.2);
     filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
 }
