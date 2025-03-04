@@ -7,19 +7,27 @@
         <link href="/styles/clock.css" rel="stylesheet" />
     </head>
     <body>
-        <div id="clock"></div>
-        <div id="calendar"></div>
+        <div id="dashboard">
+            <div id="top-section">
+                <div id="clock-section">
+                    <div id="clock"></div>
+                </div>
+                <div id="weather-section">
+                    <div id="weather">Loading weather...</div>
+                </div>
+            </div>
 
-        <h1>Welcome {{ welcomeMessage }}</h1>
-
-        <div id="dock">
-            {{#each links}}
-            <a href="{{url}}" target="_blank" class="dock-item">
-                <img src="{{icon}}" />
-            </a>
-            {{/each}}
+            <div id="links-section">
+                {{#each links}}
+                <a href="{{this.url}}" target="_blank" class="app-icon">
+                    <img src="{{this.icon}}" alt="{{this.text}} icon" />
+                    <span>{{this.text}}</span>
+                </a>
+                {{/each}}
+            </div>
         </div>
 
         <script src="/js/clock.js"></script>
+        <script src="/js/weather.js"></script>
     </body>
 </html>
